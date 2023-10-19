@@ -1,3 +1,5 @@
+@import './colors.scss';
+
 #app {
   text-align: center;
 }
@@ -6,8 +8,9 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: #000;
-  background-color: #f6f6f6;
+  color: $text-primary;
+  background-color: $background-secondary;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -19,9 +22,9 @@ a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
-}
-a:hover {
-  color: #747bff;
+  &:hover {
+      color: #747bff;
+  }
 }
 
 body {
@@ -48,18 +51,19 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #ffbb00;
+  background-color: $primary;
   cursor: pointer;
   transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
 
-/*# sourceMappingURL=app.css.map */
+  &:hover {
+      border-color: #646cff;
+  }
+
+  &:focus {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+
+  &:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+}
