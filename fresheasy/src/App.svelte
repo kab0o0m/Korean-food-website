@@ -1,18 +1,18 @@
 <script>
-  import Counter from './lib/Counter.svelte'
-  import Header from './lib/Header.svelte'
+  import { Router, Link, Route } from "svelte-routing";
+  import Navbar from "./lib/Navbar.svelte";
+
+  import Home from "./routes/Home.svelte";
+  import Posts from "./routes/posts/Posts.svelte";
+  import About from "./routes/about/About.svelte";
+  export let url = "";
 </script>
 
-<main>
-
-  <nav>
-    <a href="/about">About</a>
-  </nav>
-  <Header />
-  <div class="card">
-    <Counter />
+<Router {url}>
+  <Navbar />
+  <div>
+    <Route path="/" component={Home} />
+    <Route path="/posts" component={Posts} />
+    <Route path="/about" component={About} />
   </div>
-</main>
-
-<style lang="scss">
-</style>
+</Router>
