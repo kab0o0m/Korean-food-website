@@ -11,7 +11,7 @@ My group's submission for the final assignment of NTU's CS2024 - Web Design and 
 After cloning the repo, run the following commands:
 
 ```md
-> cd fresheasy
+> cd fresheasy_v2
 > npm install
 > npm run dev
 ```
