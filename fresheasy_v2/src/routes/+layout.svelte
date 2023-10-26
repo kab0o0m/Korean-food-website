@@ -1,12 +1,17 @@
 <script>
-	import '../app.postcss';
+	import './../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
+	let title = "Sharelife x Fresheasy"
 </script>
+
+<head>
+	<title>{title}</title>
+</head>
 
 <!-- App Shell -->
 <AppShell>
@@ -14,32 +19,38 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">Skeleton</strong>
+				<strong class="text-xl uppercase">SL x Fresheasy</strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://discord.gg/EXqV7W8MtY"
-					target="_blank"
+					href="/"
 					rel="noreferrer"
 				>
-					Discord
+					Home
 				</a>
 				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://twitter.com/SkeletonUI"
-					target="_blank"
+					href="/about"
 					rel="noreferrer"
 				>
-					Twitter
+					About
 				</a>
 				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://github.com/skeletonlabs/skeleton"
-					target="_blank"
+					href="/mealkits"
 					rel="noreferrer"
 				>
-					GitHub
+					Meal Kits
+				</a>
+				<a
+					href="/faq"
+					rel="noreferrer"
+				>
+					FAQ
+				</a>
+				<a
+					href="/contact"
+					rel="noreferrer"
+				>
+					Contact Us
 				</a>
 			</svelte:fragment>
 		</AppBar>
