@@ -1,9 +1,4 @@
-<!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
-
-<svelte:head>
-	<title>SLxFE: About</title>
-</svelte:head>
-
+<main>
 <div class="container h-full mx-auto flex justify-center items-center">
 	<div class="space-y-10 text-center flex flex-col items-center">
 		<h2 class="h2">This is the about page!</h2>
@@ -16,6 +11,4 @@
 		</div>
 	</div>
 </div>
-
-<style lang="postcss">
-</style>
+</main>

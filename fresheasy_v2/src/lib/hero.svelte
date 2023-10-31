@@ -1,9 +1,7 @@
-<div class="bg-surface-200 w-screen flex justify-center items-center">
-    <div class="bg-red-500 h-full mr-80 text-center p-16">
-        <h1 class="h1">The Best Value Meal Kit</h1>
-        <h2 class="h2">Discover the flavour of Seoul at your doorstep!</h2>
-    </div>
-    <div class="bg-blue-500 h-full">
-        <h1 class="h1">Test</h1>
+<div class="bg-surface-300 w-full h">
+    <div class="bg-red-500 text-center p-16 sm:w-">
+        <h1 class="h1 pb-4 pt-12"><b>The Best Value Meal Kit</b></h1>
+        <h3 class="h3 pb-8">Discover the flavour of Seoul at your doorstep!</h3>
+        <a href="./mealkits"><div class="btn bg-primary-500 text-white">ORDER NOW</div></a>
     </div>
 </div>
