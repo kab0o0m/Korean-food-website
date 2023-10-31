@@ -1,10 +1,12 @@
 <script>
 	import Hero from '$lib/hero.svelte'
 	import NavbarResponsive from '$lib/navbar_responsive.svelte';
+	import HeaderSpacer from '../lib/header_spacer.svelte';
 </script>
 
 <main>
 <NavbarResponsive />
+<HeaderSpacer />
 <div class="flex justify-center align-middle h-screen">
 	<Hero />
 </div>
