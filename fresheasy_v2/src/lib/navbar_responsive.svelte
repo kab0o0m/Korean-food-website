@@ -1,59 +1,82 @@
 <!-- Navbar.svelte -->
-  <script>
-    let isMenuOpen = false;
-    let isDropdownOpen = false;
-  
-    function toggleMenu() {
-      isMenuOpen = !isMenuOpen;
-    }
-  
-    function toggleDropdown() {
-      isDropdownOpen = !isDropdownOpen;
-    }
-  </script>
+<script>
+  let isMenuOpen = false;
+  let isDropdownOpen = false;
 
-  
-  
-  <nav class="bg-white p-5 sm:p-5 md:p-5 lg:p-3 xl:p-3 2xl:p-5 fixed w-screen">
-    <div class="container mx-auto px-4 py-2 flex justify-between items-center">
-      <div class="text-black font-bold text-lg cursor-pointer">Your Logo</div>
-      
-      <div class="lg:hidden">
-        <button class="m-2" on:click={toggleMenu}>
-            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
-        </button>
-      </div>
-  
-      <ul class="hidden lg:flex space-x-4">
-        <li><a href="/" class="text-black hover:text-yellow-500 duration-150 text-xl px-2">Home</a></li>
-        <li><a href="about" class="text-black hover:text-yellow-500 duration-150 text-xl px-2">About</a></li>
-        <li>
-          <div class="flex">
-            <a href="mealkits" class="text-black hover:text-yellow-500 duration-150 text-xl px-2">Mealkits</a>
-            <div on:click={toggleDropdown} class="cursor-pointer pt-1.5">
-           
-              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg> 
-              {#if isDropdownOpen}
-                <ul class="fixed bg-white mt-2 p-2 space-y-2 text-black">
-                  <li><a href="#" class="hover:text-gray-300">Option 1</a></li>
-                  <li><a href="#" class="hover:text-gray-300">Option 2</a></li>
-                </ul>
+  function toggleMenu() {
+    isMenuOpen = !isMenuOpen;
+  }
+
+  function toggleDropdown() {
+    isDropdownOpen = !isDropdownOpen;
+  }
+</script>
+
+<nav class="bg-white p-5 sm:p-5 md:p-5 lg:p-3 xl:p-3 2xl:p-5 fixed w-screen shadow-xl select-none">
+  <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+    <a class="cursor-pointer text-xl" href="home">
+      <img class="h-16 w-auto" src="/src/assets/img/logo.jpg" alt=""/>
+    </a>
+    <ul class="hidden lg:flex space-x-10">
+      <li class="flex content-center justify-center"><a href="home" class="text-black hover:text-yellow-500 duration-150 text-xl px-2 pt-1">Home</a></li>
+      <li class="flex content-center justify-center"><a href="about" class="text-black hover:text-yellow-500 duration-150 text-xl px-2 pt-1">About</a></li>
+      <li>
+        <div class="flex relative pt-1">
+          <a href="mealkits" class="text-black hover:text-yellow-500 duration-150 text-xl px-2">Mealkits</a>
+          <!-- svelte-ignore a11y-click-events-have-key-events -->
+          <!-- svelte-ignore a11y-no-static-element-interactions -->
+          <div on:click={toggleDropdown} class="cursor-pointer pt-1.5">
+            <div class="hover:scale-110 pl-1 duration-150">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+              <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+            </svg>
+            </div>
+            {#if isDropdownOpen}
+            <ul class="py-4 mt-4 bg-white text-black rounded-lg text-center absolute -left-14 w-max shadow-xl">
+                <a href="mealkits/beef"><li class="px-4 py-1 text-xl hover:bg-gray-200">Beef Bulgogi</li></a>
+                <a href="mealkits/chicken"><li class="px-4 py-1 text-xl hover:bg-gray-200">Spicy Chicken Bulgogi</li></a>
+                <a href="mealkits/pork"><li class="px-4 py-1 text-xl hover:bg-gray-200">Spicy Pork Bulgogi</li></a>
+                <a href="mealkits/armystew"><li class="px-4 py-1 text-xl hover:bg-gray-200">Army Stew</li></a>
+              </ul>
               {/if}
           </div>
         </li>
-        <li><a href="faq" class="text-black hover:text-yellow-500 duration-150 text-xl px-2">FAQ</a></li>
-        <li><a href="contact" class="text-black hover:text-yellow-500 duration-150 text-xl px-2">Contact Us</a></li>
+        <li class="flex content-center justify-center"><a href="faq" class="text-black hover:text-yellow-500 duration-150 text-xl px-2 pt-1">FAQ</a></li>
+        <li class="flex content-center justify-center"><a href="contact" class="text-black hover:text-yellow-500 duration-150 text-xl px-2 pt-1">Contact Us</a></li>
+        <li class="pt-1">
+          <a href="checkout">
+            <div class="bg-primary-500 px-6 py-2 rounded-xl pl-2cursor-pointer relative hover:bg-primary-400">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"/></svg>
+              <div class="absolute inline-flex items-center justify-center w-6 h-6 text-sm pb-0.5 font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -right-2 dark:border-gray-900">4</div>
+            </div>
+          </a>
+        </li>
+
       </ul>
+      <div class="lg:hidden">
+        <button class="m-2" on:click={toggleMenu}>
+          <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+          </svg>
+        </button>
+      </div>
     </div>
+
   </nav>
   
   {#if isMenuOpen}
-    <div class="lg:hidden absolute top-20 w-screen">
-      <ul class="bg-white ease-in py-4 duration-150">
-        <li><a href="/" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl w-full">Home</a></li>
-        <li><a href="about" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl">About</a></li>
-        <li><a href="faq" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl">FAQ</a></li>
-        <li><a href="contact" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl">Contact Us</a></li>
-      </ul>
-    </div>
+  <div class="lg:hidden absolute top-20 w-screen">
+    <ul class="bg-white py-4">
+      <li><a href="/" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl w-full">Home</a></li>
+      <li><a href="about" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl">About</a></li>
+      <li><a href="faq" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl">FAQ</a></li>
+      <li><a href="contact" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl">Contact Us</a></li>
+      <li><a href="checkout" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl">
+        <div class="relative w-min">
+          <p class="w-max">Check Out</p>
+          <div class="absolute inline-flex items-center justify-center w-6 h-6 text-sm pb-0.5 font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -right-6 dark:border-gray-900">4</div>
+        </div>
+      </a></li>
+    </ul>
+  </div>
   {/if}
