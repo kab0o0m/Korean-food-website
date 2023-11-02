@@ -2,6 +2,7 @@
 <script>
   let isMenuOpen = false;
   let isDropdownOpen = false;
+  let isCartOpen = false;
 
   function toggleMenu() {
     isMenuOpen = !isMenuOpen;
@@ -10,9 +11,13 @@
   function toggleDropdown() {
     isDropdownOpen = !isDropdownOpen;
   }
+
+  function toggleCart() {
+    isCartOpen = !isCartOpen;
+  }
 </script>
 
-<nav class="bg-white p-5 sm:p-5 md:p-5 lg:p-3 xl:p-3 2xl:p-5 fixed w-screen shadow-xl select-none">
+<nav class="bg-white p-3 sm:p-3 md:p-3 lg:p-1 xl:p-1 2xl:p-1 fixed w-screen shadow-xl select-none">
   <div class="container mx-auto px-4 py-2 flex justify-between items-center">
     <a class="cursor-pointer text-xl" href="home">
       <img class="h-16 w-auto" src="/src/assets/img/logo.jpg" alt=""/>
@@ -38,18 +43,36 @@
                 <a href="mealkits/pork"><li class="px-4 py-1 text-xl hover:bg-gray-200">Spicy Pork Bulgogi</li></a>
                 <a href="mealkits/armystew"><li class="px-4 py-1 text-xl hover:bg-gray-200">Army Stew</li></a>
               </ul>
-              {/if}
+            {/if}
           </div>
         </li>
         <li class="flex content-center justify-center"><a href="faq" class="text-black hover:text-yellow-500 duration-150 text-xl px-2 pt-1">FAQ</a></li>
         <li class="flex content-center justify-center"><a href="contact" class="text-black hover:text-yellow-500 duration-150 text-xl px-2 pt-1">Contact Us</a></li>
         <li class="pt-1">
-          <a href="checkout">
-            <div class="bg-primary-500 px-6 py-2 rounded-xl pl-2cursor-pointer relative hover:bg-primary-400">
+          <div class="relative">
+            <!-- svelte-ignore a11y-no-static-element-interactions -->
+            <!-- svelte-ignore a11y-click-events-have-key-events -->
+            <div class="bg-primary-500  px-6 py-2 rounded-xl cursor-pointer relative hover:bg-primary-400" on:click={toggleCart}>
               <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"/></svg>
               <div class="absolute inline-flex items-center justify-center w-6 h-6 text-sm pb-0.5 font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -right-2 dark:border-gray-900">4</div>
             </div>
-          </a>
+            {#if isCartOpen}
+            <div class="px-2 py-3 mt-4 bg-white text-black rounded-lg text-center right-0 absolute w-max shadow-xl">
+              <ul>
+                <li class="h-24 w-56 bg-gray-400"></li>
+                <hr>
+                <li class="h-24 w-56 bg-gray-400"></li>
+                <hr>
+                <li class="h-24 w-56 bg-gray-400"></li>
+                <hr>
+                <li class="h-24 w-56 bg-gray-400"></li>
+              </ul>
+              <div class="w-max flex float-right">
+                <a class="pr-2 pt-2" href="checkout">Check Out</a>
+              </div>
+            </div>
+            {/if}
+          </div>
         </li>
 
       </ul>
@@ -67,11 +90,11 @@
   {#if isMenuOpen}
   <div class="lg:hidden absolute top-20 w-screen">
     <ul class="bg-white py-4">
-      <li><a href="/" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl w-full">Home</a></li>
-      <li><a href="about" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl">About</a></li>
-      <li><a href="faq" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl">FAQ</a></li>
-      <li><a href="contact" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl">Contact Us</a></li>
-      <li><a href="checkout" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl">
+      <li class="py-1"><a href="/" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl w-full">Home</a></li>
+      <li class="py-1"><a href="about" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl">About</a></li>
+      <li class="py-1"><a href="faq" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl">FAQ</a></li>
+      <li class="py-1"><a href="contact" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl">Contact Us</a></li>
+      <li class="py-1"><a href="checkout" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl">
         <div class="relative w-min">
           <p class="w-max">Check Out</p>
           <div class="absolute inline-flex items-center justify-center w-6 h-6 text-sm pb-0.5 font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -right-6 dark:border-gray-900">4</div>
