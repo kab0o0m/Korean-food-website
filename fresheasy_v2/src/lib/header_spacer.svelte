@@ -1,3 +1,3 @@
-<div class="bg-white p-5 sm:p-5 md:p-5 lg:p-3 xl:p-3 2xl:p-5">
-    <button></button>
+<div class="bg-white mb-3 sm:mb-3 md:mb-3 lg:mb-1 xl:mb-1 2xl:mb-1 w-screen">
+    <button class="h-16"></button>
 </div>
