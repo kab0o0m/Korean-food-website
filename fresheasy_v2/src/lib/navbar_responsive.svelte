@@ -5,17 +5,21 @@
   let isMenuOpen = false;
   let isDropdownOpen = false;
   let isCartOpen = false;
-
-  function toggleMenu() {
-    isMenuOpen = !isMenuOpen;
-  }
-
+  
+  const dropdownFocus = () => { isDropdownOpen = true; }
+  const dropdownBlur = () => { isDropdownOpen = false; }
+  
+  const cartFocus = () => { isCartOpen = true; }
+  const cartBlur= () => { isCartOpen = false; }
+  
   function toggleDropdown() {
     isDropdownOpen = !isDropdownOpen;
   }
-
   function toggleCart() {
     isCartOpen = !isCartOpen;
+  }
+  function toggleMenu() {
+    isMenuOpen = !isMenuOpen;
   }
 </script>
 
@@ -32,14 +36,14 @@
           <a href="mealkits" class="text-black hover:text-yellow-500 duration-150 text-xl px-2">Mealkits</a>
           <!-- svelte-ignore a11y-click-events-have-key-events -->
           <!-- svelte-ignore a11y-no-static-element-interactions -->
-          <div on:click={toggleDropdown} class="cursor-pointer pt-1.5">
-            <div class="hover:scale-110 pl-1 duration-150">
-            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+          <div class="cursor-pointer pt-1.5 relative">
+            <button class="hover:scale-125 pl-1 pb-2 duration-150" on:click={toggleDropdown} on:blur={dropdownBlur}>
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
               <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
-            </svg>
+            </button>
             </div>
             {#if isDropdownOpen}
-            <ul class="py-4 mt-4 bg-white text-black rounded-lg text-center absolute -left-14 w-max shadow-xl">
+              <ul class="py-4 bg-white text-black rounded-lg text-center absolute -top-6 mt-16 -left-14 w-max shadow-xl">
                 <a href="mealkits/beef"><li class="px-4 py-1 text-xl hover:bg-gray-200">Beef Bulgogi</li></a>
                 <a href="mealkits/chicken"><li class="px-4 py-1 text-xl hover:bg-gray-200">Spicy Chicken Bulgogi</li></a>
                 <a href="mealkits/pork"><li class="px-4 py-1 text-xl hover:bg-gray-200">Spicy Pork Bulgogi</li></a>
@@ -54,14 +58,14 @@
           <div class="relative">
             <!-- svelte-ignore a11y-no-static-element-interactions -->
             <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <div class="bg-primary-500  px-6 py-2 rounded-xl cursor-pointer relative hover:bg-primary-400" on:click={toggleCart}>
+            <button class="bg-primary-500  px-6 py-2 rounded-xl cursor-pointer relative hover:bg-primary-400" on:click={toggleCart}>
               <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"/></svg>
               <div class="absolute inline-flex items-center justify-center w-6 h-6 text-sm pb-0.5 font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -right-2 dark:border-gray-900">4</div>
-            </div>
+            </button>
             {#if isCartOpen}
-            <div class="px-2 py-3 mt-4 bg-white text-black rounded-lg text-center right-0 absolute w-max shadow-xl">
+            <div class="px-2 py-3 mt-4 bg-white text-black rounded-lg text-center right-0 absolute w-max shadow-xl" on:blur={cartBlur}>
               <ul>
-                <li class="h-24 w-full border-none hover:border-solid border-primary-500 border-2 flex">
+                <li class="h-24 w-full flex">
                   <div class="bg-blue-500 h-full w-24">Product icon goes here</div>
                   <div class="p-2 text-left">
                     <p>Beef Bulgogi</p>
@@ -70,7 +74,7 @@
                   </div>
                 </li>
                 <hr class="py-1">
-                <li class="h-24 w-full border-none hover:border-solid border-primary-500 border-2 flex">
+                <li class="h-24 w-full flex">
                   <div class="bg-blue-500 h-full w-24">Product icon goes here</div>
                   <div class="p-2 text-left">
                     <p>Spicy Chicken Bulgogi</p>
@@ -79,7 +83,7 @@
                   </div>
                 </li>
                 <hr class="py-1">
-                <li class="h-24 w-full border-none hover:border-solid border-primary-500 border-2 flex">
+                <li class="h-24 w-full flex">
                   <div class="bg-blue-500 h-full w-24">Product icon goes here</div>
                   <div class="p-2 text-left">
                     <p>Spicy Pork Bulgogi</p>
@@ -88,7 +92,7 @@
                   </div>
                 </li>
                 <hr class="py-1">
-                <li class="h-24 w-full border-none hover:border-solid border-primary-500 border-2 flex">
+                <li class="h-24 w-full flex">
                   <div class="bg-blue-500 h-full w-24">Product icon goes here</div>
                   <div class="p-2 text-left">
                     <p>Army Stew</p>
