@@ -20,7 +20,7 @@
 <nav class="bg-white p-3 sm:p-3 md:p-3 lg:p-1 xl:p-1 2xl:p-1 fixed w-screen shadow-xl select-none">
   <div class="container mx-auto px-4 py-2 flex justify-between items-center">
     <a class="cursor-pointer text-xl" href="home">
-      <img class="h-16 w-auto" src="/src/assets/img/logo.jpg" alt=""/>
+      <img class="h-16 w-auto" src="./assets/logo.jpg" alt=""/>
     </a>
     <ul class="hidden lg:flex space-x-10">
       <li class="flex content-center justify-center"><a href="home" class="text-black hover:text-yellow-500 duration-150 text-xl px-2 pt-1">Home</a></li>
@@ -59,16 +59,42 @@
             {#if isCartOpen}
             <div class="px-2 py-3 mt-4 bg-white text-black rounded-lg text-center right-0 absolute w-max shadow-xl">
               <ul>
-                <li class="h-24 w-56 bg-gray-400"></li>
-                <hr>
-                <li class="h-24 w-56 bg-gray-400"></li>
-                <hr>
-                <li class="h-24 w-56 bg-gray-400"></li>
-                <hr>
-                <li class="h-24 w-56 bg-gray-400"></li>
+                <li class="h-24 w-full border-none hover:border-solid border-primary-500 border-2 flex">
+                  <div class="bg-blue-500 h-full w-24">Product icon goes here</div>
+                  <div class="p-2 text-left">
+                    <p>Beef Bulgogi</p>
+                    <p>$6.00</p>
+                  </div>
+                </li>
+                <hr class="py-1">
+                <li class="h-24 w-full border-none hover:border-solid border-primary-500 border-2 flex">
+                  <div class="bg-blue-500 h-full w-24">Product icon goes here</div>
+                  <div class="p-2 text-left">
+                    <p>Spicy Chicken Bulgogi</p>
+                    <p>$6.00</p>
+                  </div>
+                </li>
+                <hr class="py-1">
+                <li class="h-24 w-full border-none hover:border-solid border-primary-500 border-2 flex">
+                  <div class="bg-blue-500 h-full w-24">Product icon goes here</div>
+                  <div class="p-2 text-left">
+                    <p>Spicy Pork Bulgogi</p>
+                    <p>$6.00</p>
+                  </div>
+                </li>
+                <hr class="py-1">
+                <li class="h-24 w-full border-none hover:border-solid border-primary-500 border-2 flex">
+                  <div class="bg-blue-500 h-full w-24">Product icon goes here</div>
+                  <div class="p-2 text-left">
+                    <p>Army Stew</p>
+                    <p>$7.00</p>
+                  </div>
+                </li>
               </ul>
-              <div class="w-max flex float-right">
-                <a class=" mt-2 py-1 px-2  flex items-center font-bold bg-primary-500 rounded-xl" href="checkout">Check Out &nbsp;<svg class="" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg> </a>
+              <div class="w-max flex justify-between">
+                <p class="pt-2.5 font-bold text-lg">Total: $25.00</p>
+                <div class="w-24"><!-- spacer --></div>
+                <a class="mt-2 py-1 px-2 flex items-center font-bold bg-primary-500 rounded-xl" href="checkout">Check Out &nbsp;<svg class="" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg> </a>
               </div>
             </div>
             {/if}
