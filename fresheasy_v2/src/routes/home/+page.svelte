@@ -2,6 +2,7 @@
 	import Hero from '$lib/hero.svelte'
 	import NavbarResponsive from '$lib/navbar_responsive.svelte';
 	import HeaderSpacer from '$lib/header_spacer.svelte';
+	import ProductCounter from '../../lib/product_counter.svelte';
 </script>
 
 <main>

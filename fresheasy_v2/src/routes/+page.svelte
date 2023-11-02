@@ -2,6 +2,7 @@
 	import Hero from '$lib/hero.svelte'
 	import NavbarResponsive from '$lib/navbar_responsive.svelte';
 	import HeaderSpacer from '$lib/header_spacer.svelte';
+	import Footer from '$lib/footer.svelte';
 </script>
 
 <main>
@@ -22,4 +23,5 @@
 		</div>
 	</div>
 </div>
+<Footer />
 </main>

@@ -1,5 +1,7 @@
 <!-- Navbar.svelte -->
 <script>
+  import ProductCounter from "$lib/product_counter.svelte";
+
   let isMenuOpen = false;
   let isDropdownOpen = false;
   let isCartOpen = false;
@@ -63,7 +65,8 @@
                   <div class="bg-blue-500 h-full w-24">Product icon goes here</div>
                   <div class="p-2 text-left">
                     <p>Beef Bulgogi</p>
-                    <p>$6.00</p>
+                    <p class="">$6.00</p>
+                    <ProductCounter />
                   </div>
                 </li>
                 <hr class="py-1">
@@ -72,6 +75,7 @@
                   <div class="p-2 text-left">
                     <p>Spicy Chicken Bulgogi</p>
                     <p>$6.00</p>
+                    <ProductCounter />
                   </div>
                 </li>
                 <hr class="py-1">
@@ -80,6 +84,7 @@
                   <div class="p-2 text-left">
                     <p>Spicy Pork Bulgogi</p>
                     <p>$6.00</p>
+                    <ProductCounter />
                   </div>
                 </li>
                 <hr class="py-1">
@@ -88,6 +93,7 @@
                   <div class="p-2 text-left">
                     <p>Army Stew</p>
                     <p>$7.00</p>
+                    <ProductCounter />
                   </div>
                 </li>
               </ul>
