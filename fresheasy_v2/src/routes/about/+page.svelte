@@ -1,22 +1,22 @@
 <script>
 	import HeaderSpacer from "$lib/header_spacer.svelte";
 	import NavbarResponsive from "$lib/navbar_responsive.svelte";
-
+	import PageTitle from "$lib/page_title.svelte";
+	import Footer from "$lib/footer.svelte";
 </script>
 
 <main>
 	<NavbarResponsive />
 	<HeaderSpacer />
-	<div class="container h-full mx-auto flex justify-center items-center">
-	<div class="space-y-10 text-center flex flex-col items-center">
-		<h2 class="h2">This is the about page!</h2>
-		<!-- Animated Logo -->
-		<div class="flex justify-center space-x-2">
-		</div>
-		<div class="space-y-2">
-			<p>Try editing the following:</p>
-			<p><code class="code bg-lime-700 text-white">/src/routes/about/+page.svelte</code></p>
-		</div>
+	<div class="flex justify-center align-middle">
+		<PageTitle 
+			page_title="About Us"
+			page_subtitle="Save a <span class='text-primary-600'>trip</span> to Korea with [SL x FRESHEASY] Meal Kits"
+			icon_left=' '
+			icon_right='<svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M482.3 192c34.2 0 93.7 29 93.7 64c0 36-59.5 64-93.7 64l-116.6 0L265.2 495.9c-5.7 10-16.3 16.1-27.8 16.1l-56.2 0c-10.6 0-18.3-10.2-15.4-20.4l49-171.6L112 320 68.8 377.6c-3 4-7.8 6.4-12.8 6.4l-42 0c-7.8 0-14-6.3-14-14c0-1.3 .2-2.6 .5-3.9L32 256 .5 145.9c-.4-1.3-.5-2.6-.5-3.9c0-7.8 6.3-14 14-14l42 0c5 0 9.8 2.4 12.8 6.4L112 192l102.9 0-49-171.6C162.9 10.2 170.6 0 181.2 0l56.2 0c11.5 0 22.1 6.2 27.8 16.1L365.7 192l116.6 0z"/></svg>'
+		/>
 	</div>
-</div>
+	<div class="flex justify-center items-center">
+	</div>
+	<Footer />
 </main>

@@ -111,7 +111,7 @@
 				product_price='6.00'
 			/>
 		</div>
-		<div class="flex justify-center">
+		<div class="flex justify-center pb-16">
 			<a href="checkout"><div class="w-48 rounded-lg bg-primary-500 hover:bg-primary-600 text-center h-12 pt-3 text-white font-bold">
 				CHECKOUT NOW
 			</div></a>

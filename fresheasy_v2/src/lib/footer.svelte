@@ -10,7 +10,7 @@
         <ul class="flex space-x-4 pb-8">
             <li><a href="privacy" class="hover:underline">Privacy Policy</a></li>
             <li><p>|</p></li>
-            <li><a href="terms" class="hover:underline">Terms & Conditions</a></li>
+            <li><a href="privacy" class="hover:underline">Terms & Conditions</a></li>
         </ul>
         <ul class="flex space-x-4">
             <li><i>SL x fresheasy &copy; 2023.</i></li>
