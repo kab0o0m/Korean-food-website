@@ -25,15 +25,15 @@
 
 <nav class="bg-white p-3 sm:p-3 md:p-3 lg:p-1 xl:p-1 2xl:p-1 fixed w-screen shadow-xl select-none">
   <div class="container mx-auto px-4 py-2 flex justify-between items-center">
-    <a class="cursor-pointer text-xl" href="/home">
+    <a class="cursor-pointer text-xl" href="home">
       <img class="h-16 w-auto" src="./assets/logo.jpg" alt=""/>
     </a>
     <ul class="hidden lg:flex space-x-10">
-      <li class="flex content-center justify-center"><a href="/home" class="text-black hover:text-yellow-500 duration-150 text-xl px-2 pt-1">Home</a></li>
-      <li class="flex content-center justify-center"><a href="/about" class="text-black hover:text-yellow-500 duration-150 text-xl px-2 pt-1">About</a></li>
+      <li class="flex content-center justify-center"><a href="home" class="text-black hover:text-yellow-500 duration-150 text-xl px-2 pt-1">Home</a></li>
+      <li class="flex content-center justify-center"><a href="about" class="text-black hover:text-yellow-500 duration-150 text-xl px-2 pt-1">About</a></li>
       <li>
         <div class="flex relative pt-1">
-          <a href="/mealkits" class="text-black hover:text-yellow-500 duration-150 text-xl px-2">Mealkits</a>
+          <a href="mealkits" class="text-black hover:text-yellow-500 duration-150 text-xl px-2">Mealkits</a>
           <!-- svelte-ignore a11y-click-events-have-key-events -->
           <!-- svelte-ignore a11y-no-static-element-interactions -->
           <div class="cursor-pointer pt-1.5 relative">
@@ -44,16 +44,16 @@
             </div>
             {#if isDropdownOpen}
               <ul class="py-4 bg-white text-black rounded-lg text-center absolute -top-6 mt-16 -left-14 w-max shadow-xl">
-                <a href="/beef"><li class="px-4 py-1 text-xl hover:bg-gray-200">Beef Bulgogi</li></a>
-                <a href="/chicken"><li class="px-4 py-1 text-xl hover:bg-gray-200">Spicy Chicken Bulgogi</li></a>
-                <a href="/pork"><li class="px-4 py-1 text-xl hover:bg-gray-200">Spicy Pork Bulgogi</li></a>
-                <a href="/armystew"><li class="px-4 py-1 text-xl hover:bg-gray-200">Army Stew</li></a>
+                <a href="beef"><li class="px-4 py-1 text-xl hover:bg-gray-200">Beef Bulgogi</li></a>
+                <a href="chicken"><li class="px-4 py-1 text-xl hover:bg-gray-200">Spicy Chicken Bulgogi</li></a>
+                <a href="pork"><li class="px-4 py-1 text-xl hover:bg-gray-200">Spicy Pork Bulgogi</li></a>
+                <a href="armystew"><li class="px-4 py-1 text-xl hover:bg-gray-200">Army Stew</li></a>
               </ul>
             {/if}
           </div>
         </li>
-        <li class="flex content-center justify-center"><a href="/faq" class="text-black hover:text-yellow-500 duration-150 text-xl px-2 pt-1">FAQ</a></li>
-        <li class="flex content-center justify-center"><a href="/contact" class="text-black hover:text-yellow-500 duration-150 text-xl px-2 pt-1">Contact Us</a></li>
+        <li class="flex content-center justify-center"><a href="faq" class="text-black hover:text-yellow-500 duration-150 text-xl px-2 pt-1">FAQ</a></li>
+        <li class="flex content-center justify-center"><a href="contact" class="text-black hover:text-yellow-500 duration-150 text-xl px-2 pt-1">Contact Us</a></li>
         <li class="pt-1">
           <div class="relative">
             <!-- svelte-ignore a11y-no-static-element-interactions -->
@@ -104,7 +104,7 @@
               <div class="w-max flex justify-between">
                 <p class="pt-2.5 font-bold text-lg">Total: $25.00</p>
                 <div class="w-24"><!-- spacer --></div>
-                <a class="mt-2 py-1 px-2 flex items-center font-bold bg-primary-500 rounded-xl" href="/checkout">Check Out &nbsp;<svg class="" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg> </a>
+                <a class="mt-2 py-1 px-2 flex items-center font-bold bg-primary-500 rounded-xl" href="checkout">Check Out &nbsp;<svg class="" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg> </a>
               </div>
             </div>
             {/if}
@@ -125,11 +125,11 @@
   {#if isMenuOpen}
   <div class="lg:hidden absolute top-20 w-screen">
     <ul class="bg-white py-4">
-      <li class="py-1"><a href="/" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl w-full">Home</a></li>
-      <li class="py-1"><a href="/about" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl">About</a></li>
-      <li class="py-1"><a href="/faq" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl">FAQ</a></li>
-      <li class="py-1"><a href="/contact" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl">Contact Us</a></li>
-      <li class="py-1"><a href="/checkout" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl">
+      <li class="py-1"><a href="home" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl w-full">Home</a></li>
+      <li class="py-1"><a href="about" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl">About</a></li>
+      <li class="py-1"><a href="faq" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl">FAQ</a></li>
+      <li class="py-1"><a href="contact" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl">Contact Us</a></li>
+      <li class="py-1"><a href="checkout" class="block text-black hover:bg-gray-200 duration-150 pl-4 py-2 text-xl">
         <div class="relative w-min">
           <p class="w-max">Check Out</p>
           <div class="absolute inline-flex items-center justify-center w-6 h-6 text-sm pb-0.5 font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -right-6 dark:border-gray-900">4</div>
