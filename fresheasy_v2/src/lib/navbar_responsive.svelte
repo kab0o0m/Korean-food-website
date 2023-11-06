@@ -37,7 +37,7 @@
           <!-- svelte-ignore a11y-click-events-have-key-events -->
           <!-- svelte-ignore a11y-no-static-element-interactions -->
           <div class="cursor-pointer pt-1.5 relative">
-            <button class="hover:scale-125 pl-1 pb-2 duration-150" on:click={toggleDropdown} on:blur={dropdownBlur}>
+            <button class="hover:scale-125 pl-1 pb-2 duration-150" on:click={toggleDropdown} >
               <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
               <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
             </button>
@@ -66,7 +66,7 @@
             <div class="px-2 py-3 mt-4 bg-white text-black rounded-lg text-center right-0 absolute w-max shadow-xl" on:blur={cartBlur}>
               <ul>
                 <li class="h-24 w-full flex">
-                  <div class="bg-blue-500 h-full w-24">Product icon goes here</div>
+                  <div class="h-full w-24 pt-2 mr-2"><img src="./assets/beef_bulgogi_img.png" alt="" /></div>
                   <div class="p-2 text-left">
                     <p>Beef Bulgogi</p>
                     <p class="">$6.00</p>
@@ -75,7 +75,7 @@
                 </li>
                 <hr class="py-1">
                 <li class="h-24 w-full flex">
-                  <div class="bg-blue-500 h-full w-24">Product icon goes here</div>
+                  <div class="pt-2 mr-2 h-full w-24"><img src="./assets/spicy_chicken_bulgogi_img.png" alt="" /></div>
                   <div class="p-2 text-left">
                     <p>Spicy Chicken Bulgogi</p>
                     <p>$6.00</p>
@@ -84,7 +84,7 @@
                 </li>
                 <hr class="py-1">
                 <li class="h-24 w-full flex">
-                  <div class="bg-blue-500 h-full w-24">Product icon goes here</div>
+                  <div class="pt-2 mr-2 h-full w-24"><img src="./assets/spicy_pork_bulgogi_img.png" alt="" /></div>
                   <div class="p-2 text-left">
                     <p>Spicy Pork Bulgogi</p>
                     <p>$6.00</p>
@@ -93,7 +93,7 @@
                 </li>
                 <hr class="py-1">
                 <li class="h-24 w-full flex">
-                  <div class="bg-blue-500 h-full w-24">Product icon goes here</div>
+                  <div class="pt-2 mr-2 h-full w-24"><img src="./assets/army_stew_img.png" alt="" /></div>
                   <div class="p-2 text-left">
                     <p>Army Stew</p>
                     <p>$7.00</p>
