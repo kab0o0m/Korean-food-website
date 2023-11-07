@@ -8,7 +8,7 @@
 <div id="page_title" class="w-screen mt-4 pt-16 pb-16 text-center flex flex-col md:bg-no-repeat lg:bg-cover lg:bg-center lg:bg-[url('/assets/header_img.png')] bg-[url('/assets/banner_background.png')]">
     <div class="flex justify-center">
         {@html icon_left}
-        <h1 class="h1 font-bold px-4">{@html page_title}</h1>
+        <h1 class="h1 font-semibold px-4">{@html page_title}</h1>
         {@html icon_right}
     </div>
     <div class="flex justify-center py-4">

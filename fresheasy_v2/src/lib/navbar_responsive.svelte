@@ -23,7 +23,7 @@
   }
 </script>
 
-<nav class="bg-white p-3 sm:p-3 md:p-3 lg:p-1 xl:p-1 2xl:p-1 fixed w-screen shadow-xl select-none">
+<nav class="bg-white z-50 p-3 sm:p-3 md:p-3 lg:p-1 xl:p-1 2xl:p-1 fixed w-screen shadow-xl select-none">
   <div class="container mx-auto px-4 py-2 flex justify-between items-center">
     <a class="cursor-pointer text-xl" href="home">
       <img class="h-16 w-auto" src="assets/logo.jpg" alt=""/>
