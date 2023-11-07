@@ -1,4 +1,4 @@
-<div class="bg-[url('./assets/banner_background.png')] w-full flex pt-16 h-4/5">
+<div class="bg-[url('./assets/banner_background.png')] bg-center w-full flex xl:pt-16 h-4/5">
     <div class="text-center md:w-3/5 w-full md:pl-16 pb-16 mt-24">
         <h1 class="h1 pb-4 md:pt-12"><b>The Best Value Meal Kit</b></h1>
         <h3 class="h3 pb-8 px-2">Discover the flavour of Seoul at your doorstep!</h3>
