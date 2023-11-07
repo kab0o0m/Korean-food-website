@@ -1,6 +1,6 @@
 # [SL x FRESHEASY] Promotion Website
 
-![Logo](./fresheasy_v2/static/assets/logo.jpg)
+![Logo](./fresheasy_v2/statiassets/logo.jpg)
 
 My group's submission for the final assignment of NTU's CS2024 - Web Design and Technologies module
 

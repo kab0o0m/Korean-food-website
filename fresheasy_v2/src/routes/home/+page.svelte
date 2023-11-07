@@ -46,7 +46,7 @@
 				text="Enjoy your delicious meal!"
 			/>
 		</div>
-		<div class="bg-[url('./assets/banner_background.png')] w-full h-4/5 py-12">
+		<div class="bg-[url('assets/banner_background.png')] w-full h-4/5 py-12">
 			<div class="flex justify-center content-center pb-12">
 				<h2 class="h2 font-bold text-center">Why us?</h2>
 			</div>
