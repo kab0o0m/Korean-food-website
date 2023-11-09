@@ -18,7 +18,7 @@
 		/>
 	</div>
 	<div class="bg-white flex flex-col justify-center py-8">
-		<ul class="w-full md:mx-48 mx-6">
+		<ul class="w-full md:mx-48 mx-6 pr-16">
 			<li>
 				<QAndA 
 					question="What kind of meal kits do you have?"

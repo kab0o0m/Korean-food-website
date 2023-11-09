@@ -17,7 +17,9 @@
         xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/></svg>
     </div>
     <div>
-        <h3 class="h3 font-bold pb-2">{question}</h3>
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
+        <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+        <h3 class="h3 font-bold pb-2 hover:underline cursor-pointer select-none" on:click={toggleAnswer}>{question}</h3>
         {#if isAnswerOpen}
             <p class="pr-8 text-justify">{answer}</p>
         {/if}

@@ -18,7 +18,7 @@
 	</div>
 	<div class="md:flex md:flex-row-reverse py-12">
 		<div class="md:w-1/2 h-max p-6">
-			<h4 class="h4 font-semibold text-center pb-4 md:pr-8">Our Pasion</h4>
+			<h4 class="h4 font-semibold text-center pb-4 md:pr-8">Our Passion</h4>
 			<p class="text-justify pb-8 md:pr-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea veritatis assumenda minima quae harum nulla sunt, laboriosam earum amet pariatur. Alias totam, impedit exercitationem fugit qui at cum, voluptates sit mollitia voluptas officia. Distinctio commodi, praesentium a quod cumque laboriosam dolores ullam aperiam excepturi maiores magnam neque dignissimos nemo pariatur.</p>
 			<h4 class="h4 font-semibold text-center pb-4 md:pr-8">Our Business</h4>
 			<p class="text-justify pb-8 md:pr-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit assumenda numquam officia cumque rem provident doloremque sequi ad tempore, omnis ipsa. Rerum laboriosam tempora laudantium quisquam libero possimus quibusdam reiciendis illum doloremque nesciunt obcaecati amet, iure provident exercitationem aut error numquam assumenda saepe, et non voluptates consectetur modi! Quod exercitationem eos et aperiam esse voluptatem corporis, laborum soluta obcaecati tempora, porro molestias repellat atque officiis. Perspiciatis beatae blanditiis amet accusantium error, ea commodi repellat nam quo reprehenderit molestias enim dolore architecto, rerum facilis fugiat quos aperiam esse, maxime pariatur minus! Enim, minima consequuntur dolore a omnis sequi quas earum voluptates?</p>
