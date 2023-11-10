@@ -11,7 +11,9 @@
     }
 
     const update_total = () => {
-        if (subtotal > 50) {
+        if (subtotal == 0) {
+            total = 0
+        } else if (subtotal > 50) {
             total = subtotal;
         } else {
         total = subtotal + 6;
@@ -72,7 +74,7 @@
                         <button class="bg-surface-200 hover:bg-surface-300 font-xl text-surface-800 rounded-lg px-2 pb-1" on:click={incr_bulgogi}>+</button>
                     </div>
                 </td>
-            <td>
+            <td class="text-right">
                 S${8 * bulgogi_amnt}.00
             </td>
             </tr>
@@ -90,7 +92,7 @@
                     <button class="bg-surface-200 hover:bg-surface-300 font-xl text-surface-800 rounded-lg px-2 pb-1" on:click={incr_stew}>+</button>
                 </div>
             </td>
-            <td>
+            <td class="text-right">
                 S${8 * armystew_amnt}.00
             </td>
             </tr>
@@ -114,7 +116,7 @@
             </tr>
             <tr>
                 <td>Shipping:</td>
-                <td>{subtotal > 50 ? "Free!" : "S$6.00"}</td>
+                <td>{(subtotal == 0 ? ("S$0.00") : (subtotal > 50 ? ("Free!") : ("$6.00")))}</td>
             </tr>
             <tr>
                 <td class="font-bold">Total:</td>
