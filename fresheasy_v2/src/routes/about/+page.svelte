@@ -30,10 +30,10 @@
 			<p class="text-justify pb-8 md:pr-16">
 				At [SL x FRESHEASY], we take pride in providing you with the highest quality ingredients and recipes
 				inspired by traditional Korean cuisine. We've meticulously crafted a selection o meal kits, including
-				<a class="text-primary-700 underline" href="/beef">Beef Bulgogi</a>,
-				<a class="text-primary-700 underline" href="/pork">Spicy Pork Bulgogi</a>,
-				<a class="text-primary-700 underline" href="/chicken">Spicy Chicken Bulgogi</a>, and
-				<a class="text-primary-700 underline" href="/armystew">Army Stew</a>,
+				<a class="text-primary-700 underline" href="beef">Beef Bulgogi</a>,
+				<a class="text-primary-700 underline" href="pork">Spicy Pork Bulgogi</a>,
+				<a class="text-primary-700 underline" href="chicken">Spicy Chicken Bulgogi</a>, and
+				<a class="text-primary-700 underline" href="armystew">Army Stew</a>,
 				to cater to your diverse tastes and culinary preferences. <br><br>
 
 				Our commitment is to offer not just a meal, but an adventure in Korean flavours right in your own
