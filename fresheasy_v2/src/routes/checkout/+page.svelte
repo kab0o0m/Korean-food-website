@@ -102,16 +102,15 @@
 						<label for="creditcard">Credit Card</label>
 				</div>
 				{#if selected=='creditcard'}
-					<p>Credit Card Selected</p>
 					<div class="px-8 pb-4">
 						<input class="w-full mt-3 appearance-none border border-gray-300 rounded-xl text-gray-700 leading-tight focus:outline-none" id="contact" name placeholder="Card number">
 						<div class="w-full flex pt-4 pb-2">
-							<input class="w-3/4 mr-2 appearance-none border border-gray-300 rounded-xl text-gray-700 leading-tight focus:outline-none" type="month" placeholder="Expiration Date (MM/YY)">
+							<input class="w-1/4 mr-2 appearance-none border border-gray-300 rounded-xl text-gray-700 leading-tight focus:outline-none" type="month" placeholder="Expiration (MM/YY)">
 							<input class="w-1/4 ml-2 appearance-none border border-gray-300 rounded-xl text-gray-700 leading-tight focus:outline-none" name placeholder="CVV">
 						</div>
 						<input class="w-full mt-3 appearance-none border border-gray-300 rounded-xl text-gray-700 leading-tight focus:outline-none" id="contact" name placeholder="Name on card">
 						<div class="flex pt-4">
-							<input type="checkbox" id="vehicle1" name="billingaddr" value="same" class="mt-1 rounded-md mr-2">
+							<input type="checkbox" id="billingaddr" name="billingaddr" value="same" class="mt-1 rounded-md mr-2">
 							<label for="billingaddr" class="text-gray-700">Remember me</label><br>
 						</div>
 					</div>
@@ -130,6 +129,10 @@
 				{#if selected=='paylah'}
 					<p class="text-gray-500 text-center text-md px-8">After clicking 'Checkout Now', you will be redirected to an external site to proceed with your payment.</p>
 				{/if}
+				<label for="promocode" class="font-bold">
+					Promo Code
+				</label>
+				<input class="w-1/4 mt-3 appearance-none border border-gray-300 rounded-xl text-gray-700 leading-tight focus:outline-none" id="promocode" name placeholder="">
 			</form>
 			<div class="bg-primary-500 rounded-xl mx-8 my-8 cursor-pointer hover:bg-primary-700">
 				<p class="text-white text-center py-2 px-8 font-bold text-xl">Checkout Now</p>

@@ -5,7 +5,7 @@
 	import Footer from "$lib/footer.svelte";
 </script>
 
-<main>
+<main class="">
 	<NavbarResponsive />
 	<HeaderSpacer />
 	<div class="flex justify-center align-middle">
@@ -19,21 +19,39 @@
 	<div class="md:flex md:flex-row-reverse py-12">
 		<div class="md:w-1/2 h-max p-6">
 			<h4 class="h4 font-semibold text-center pb-4 md:pr-8">Our Passion</h4>
-			<p class="text-justify pb-8 md:pr-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea veritatis assumenda minima quae harum nulla sunt, laboriosam earum amet pariatur. Alias totam, impedit exercitationem fugit qui at cum, voluptates sit mollitia voluptas officia. Distinctio commodi, praesentium a quod cumque laboriosam dolores ullam aperiam excepturi maiores magnam neque dignissimos nemo pariatur.</p>
+			<p class="text-justify pb-8 md:pr-16">
+				We are [SL x FRESHEASY] Meal Kits, your gateway to authentic and delightful Korean cuisine. 
+				We are a team of passionate food enthusiats dedicated to bringing the rich and bold flavours 
+				of Korea to your home. <br><br>
+				Our love for Korean dishes has driven us to create easy-to-cook mealkits that ensure a memorable
+				dining experience for you and your loved ones.
+			</p>
 			<h4 class="h4 font-semibold text-center pb-4 md:pr-8">Our Business</h4>
-			<p class="text-justify pb-8 md:pr-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit assumenda numquam officia cumque rem provident doloremque sequi ad tempore, omnis ipsa. Rerum laboriosam tempora laudantium quisquam libero possimus quibusdam reiciendis illum doloremque nesciunt obcaecati amet, iure provident exercitationem aut error numquam assumenda saepe, et non voluptates consectetur modi! Quod exercitationem eos et aperiam esse voluptatem corporis, laborum soluta obcaecati tempora, porro molestias repellat atque officiis. Perspiciatis beatae blanditiis amet accusantium error, ea commodi repellat nam quo reprehenderit molestias enim dolore architecto, rerum facilis fugiat quos aperiam esse, maxime pariatur minus! Enim, minima consequuntur dolore a omnis sequi quas earum voluptates?</p>
+			<p class="text-justify pb-8 md:pr-16">
+				At [SL x FRESHEASY], we take pride in providing you with the highest quality ingredients and recipes
+				inspired by traditional Korean cuisine. We've meticulously crafted a selection o meal kits, including
+				<a class="text-primary-700 underline" href="/beef">Beef Bulgogi</a>,
+				<a class="text-primary-700 underline" href="/pork">Spicy Pork Bulgogi</a>,
+				<a class="text-primary-700 underline" href="/chicken">Spicy Chicken Bulgogi</a>, and
+				<a class="text-primary-700 underline" href="/armystew">Army Stew</a>,
+				to cater to your diverse tastes and culinary preferences. <br><br>
+
+				Our commitment is to offer not just a meal, but an adventure in Korean flavours right in your own
+				kitchen. Thank you for choosing [SL x FRESHEASY] Meal Kits. We can't wait to embark on this flavorful
+				journey with you, one delicious meal at a time.
+			</p>
 		</div>
 		<div class="md:w-1/2 flex flex-row-reverse md:flex-col content-center justify-center">
 			<div class="w-1/2 md:w-full flex justify-center py-8">
 				<img 
 					src="./assets/spicy_pork_bulgogi_img.png" alt=""
-					class="-rotate-[10deg] -z-50 pb-8 pr-4 scale-110 md:pb-0 drop-shadow-[-4px_6px_6px_rgba(0,0,0,1)]"
+					class="-rotate-[10deg] -z-40 pb-8 pr-4 scale-110 md:pb-0 drop-shadow-[-4px_6px_6px_rgba(0,0,0,1)]"
 				/>
 			</div>
 			<div class="w-1/2 md:w-full flex justify-center py-8">
 				<img 
 					src="./assets/army_stew_img.png" alt=""
-					class="rotate-[10deg] -z-50 pb-8 pl-4 scale-110 md:pb-0 drop-shadow-[-4px_6px_6px_rgba(0,0,0,1)]"
+					class="rotate-[10deg] -z-40 pb-8 pl-4 scale-110 md:pb-0 drop-shadow-[-4px_6px_6px_rgba(0,0,0,1)]"
 				/>
 			</div>
 		</div>

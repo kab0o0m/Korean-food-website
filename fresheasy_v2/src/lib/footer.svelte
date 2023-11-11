@@ -20,7 +20,7 @@
     </div>
     <div class=" w-1/5 text-center">
         <p>Email: <a href="mailto:contact@slfoods.com" class="hover:underline">contact@slfoods.com</a></p>
-        <p class="pb-4">Contact Number: <a href="tel:+6598765432" class="hover:underline">9876 5432</a></p>
+        <p class="pb-4">Contact Number: <a href="tel:+66841261" class="hover:underline">+65 6684 1261</a></p>
         <div>
             <ul class="flex content-center justify-center space-x-4">
                 <li class="hover:scale-125 duration-75 hover:cursor-pointer"><svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style></style><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></li>
