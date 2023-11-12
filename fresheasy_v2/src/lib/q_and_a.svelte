@@ -19,9 +19,9 @@
     <div>
         <!-- svelte-ignore a11y-click-events-have-key-events -->
         <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
-        <h3 class="h3 font-bold pb-2 hover:underline cursor-pointer select-none" on:click={toggleAnswer}>{question}</h3>
+        <h3 class="h3 font-bold pb-2 hover:underline cursor-pointer" on:click={toggleAnswer}>{question}</h3>
         {#if isAnswerOpen}
-            <p class="pr-8 text-justify">{answer}</p>
+            <p class="pr-8 text-justify">{@html answer}</p>
         {/if}
     </div>
 </div>

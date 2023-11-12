@@ -3,6 +3,8 @@
 	import NavbarResponsive from "$lib/navbar_responsive.svelte";
 	import PageTitle from "$lib/page_title.svelte";
 	import Footer from "$lib/footer.svelte";
+	import ProductCounter from "$lib/product_counter.svelte";
+	import ProductSelectorCondensed from "$lib/product_selector_condensed.svelte";
 </script>
 
 <main>
@@ -17,34 +19,114 @@
 		/>
 	</div>
 	<div class="flex justify-center flex-col items-center bg-white ">
-		<div class="bg-red-500 w-full flex lg:flex-row flex-col p-4">
-			<div class="bg-blue-500 w-full flex justify-center">
-				<img class="w-4/5 md:w-2/5 lg:w-1/2 lg:ml-32" src="/assets/army_stew_img.png"  alt=""/>
+		<div class="w-full flex lg:flex-row flex-col p-4">
+			<div class="w-full flex justify-center">
+				<img class="w-[360px] lg:w-[480px] h-[266px] lg:h-[355px] lg:ml-32 mt-8 lg:my-8" src="/assets/army_stew_img.png"  alt=""/>
 			</div>
-			<div class="bg-yellow-500 w-full lg:p-8">
-				<h3 class="h3 text-center lg:text-left">Army Stew</h3>
+			<div class="w-full px-12 py-8 lg:px-24 lg:py-16">
+				<h3 class="h3 font-semibold text-center lg:text-left">Army Stew</h3>
 				<h4 class="h4 text-center lg:text-left">$8.00</h4>
-				<hr class="bg-gray-700 my-8 w-full lg:w-4/5">
+				<div class="pt-6"><ul class="flex justify-center lg:justify-normal pb-4 space-x-1">
+					<li><svg class="fill-primary-500" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></li>
+					<li><svg class="fill-primary-500" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></li>
+					<li><svg class="fill-primary-500" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></li>
+					<li><svg class="fill-primary-500" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></li>
+					<li><svg class="fill-primary-500" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></li>
+				</ul></div>
+				<hr class="bg-gray-500 h-0.5 my-8 w-full lg:w-4/5">
+				<div class="flex justify-center lg:justify-normal">
+					<div class="lg:flex-none flex-col justify-center">
+						<h4 class="h4 font-semibold pb-4 lg:pr-4 lg:pt-1 text-center">Quantity</h4>
+						<ProductCounter />
+					</div>
+				</div>
+				<div class="flex justify-center lg:justify-normal py-8">
+					<button class="btn bg-primary-500 py-2 px-8 rounded-xl hover:bg-yellow-600">
+						<p class="text-white font-semibold pb-1">ADD TO CART</p>
+					</button>
+				</div>
 			</div>
 		</div>
-		<div class="bg-red-500 w-full flex lg:flex-row flex-col p-4">
-			<div class="bg-blue-500 w-full">
-				Cooking Directions
+		<div class="w-full flex lg:flex-row flex-col p-4">
+			<div class="w-full ml-1/2 flex flex-col lg:pl-24">
+				<h3 class="h3 lg:text-left text-center font-semibold py-4">Cooking Instructions</h3>
+				<ol class="list-decimal ml-8 py-2 mr-4">
+					<li>
+						<p>Fully defrost all ingredients in the meal kit.</p>
+					</li>
+					<li>
+						<p>Add 700ml of water and all ingredients (except the ramen and cheese) into a pot</p>
+					</li>
+					<li>
+						<p>Boil for 6 minutes over high heat.</p>
+					</li>
+					<li>
+						<p>Add ramen noodles and boil for another 3 minutes.</p>
+					</li>
+					<li>
+						<p>Turn off the heat and add the cheese on top.</p>
+					</li>
+					<li>
+						<p>Enjoy your army stew!</p>
+					</li>
+				</ol>
 			</div>
-			<div class="bg-yellow-500 w-full">
-				Ingredients List
+			<div class="w-full">
+				<h3 class="h3 lg:text-left text-center font-semibold py-4">Ingredients</h3>
+				<ul class="space-y-6">
+					<li class="lg:mr-32">
+						<div class="flex pt-3">
+							<img class="w-24" alt="" src="/assets/army_stew/meat.png" />
+							<p class="text-justify px-4 pt-2">Our meal kit contains slices of <b>luncheon meat, chicken chipolata and spicy Italian pork sausage</b> for that chew.</p>
+						</div>
+					</li>
+					<li class="lg:mr-32">
+						<div class="flex">
+							<img class="w-24" alt="" src="/assets/army_stew/sauce.png" />
+							<p class="text-justify px-4 pt-2">Our <b>stew sauce</b> recipe contains a mix of spices that is heart and bursting with flavour.</p>
+						</div>
+					</li>
+					<li class="lg:mr-32">
+						<div class="flex">
+							<img class="w-24" alt="" src="/assets/army_stew/vegetable.png" />
+							<p class="text-justify px-4 pt-2">We've selected the freshest <b>vegetables and herbs</b> for that authentic touch.</p>
+						</div>
+					</li>
+					<li class="lg:mr-32">
+						<div class="flex">
+							<img class="w-24" alt="" src="/assets/army_stew/ramen.png" />
+							<p class="text-justify px-4 pt-2">The <b>ramen</b> will soak up all the delicious flavours in the stew to add an extra layer of satisfaction to your meal.</p>
+						</div>
+					</li>
+					<li class="lg:mr-32">
+						<div class="flex">
+							<img class="w-24" alt="" src="/assets/army_stew/cheese.png" />
+							<p class="text-justify px-4 pt-2">Add this slice of <b>cheese</b> while the stew is still hot for extra gooey-ness.</p>
+						</div>
+					</li>
+				</ul>
 			</div>
 		</div>
-		<div class="bg-green-500 w-full flex lg:flex-row flex-col justify-center p-4">
-			<div class="bg-blue-500 w-full lg:w-1/3">
-				Other Product 1
-			</div>
-			<div class="bg-yellow-500 w-full lg:w-1/3">
-				Other Product 2
-			</div>
-			<div class="bg-blue-500 w-full lg:w-1/3">
-				Other Product 3
-			</div>
+		<h2 class="h2 text-center pt-12 font-semibold">View our other meal kits!</h2>
+		<div class="flex flex-wrap lg:flex-nowrap justify-center text-center content-center pt-8 pb-32 bg-white w-full">
+			<ProductSelectorCondensed
+				image_src='./assets/beef_bulgogi_img.png'
+				product_name='Beef Bulgogi'
+				product_price='6.00'
+				product='beef'
+			/>
+			<ProductSelectorCondensed
+				image_src='./assets/spicy_chicken_bulgogi_img.png'
+				product_name='Spicy Chicken Bulgogi'
+				product_price='6.00'
+				product='chicken'
+			/>
+			<ProductSelectorCondensed
+				image_src='./assets/spicy_pork_bulgogi_img.png'
+				product_name='Spicy Pork Bulgogi'
+				product_price='6.00'
+				product='pork'
+			/>
 		</div>
 	</div>
 	<Footer />

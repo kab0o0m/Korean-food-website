@@ -17,12 +17,19 @@
 			icon_right=''
 		/>
 	</div>
-	<div class="bg-white flex flex-col justify-center py-8">
-		<ul class="w-full md:mx-48 mx-6 pr-16">
+	<div class="bg-white flex flex-col justify-center py-8 lg:px-32">
+		<ul class="w-full mx-6 pr-16">
 			<li>
 				<QAndA 
 					question="What kind of meal kits do you have?"
-					answer="We have 4 different types of meal kits - Beef Bulgogi, Spicy Chicken Bulgogi, and Army Stew. All our meal kits are influenced by Korean cuisine."
+					answer="We have 4 different types of meal kits - 
+					
+								<a class='text-primary-600 underline' href='beef'>Beef Bulgogi</a>,
+								<a class='text-primary-600 underline' href='pork'>Spicy Pork Bulgogi</a>,
+								<a class='text-primary-600 underline' href='chicken'>Spicy Chicken Bulgogi</a>, and
+								<a class='text-primary-600 underline' href='armystew'>Army Stew</a>.
+
+								All our meal kits are influenced by Korean cuisine."
 				/>
 			</li>
 			<li>
