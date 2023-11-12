@@ -21,7 +21,7 @@
 			<h4 class="h4 font-semibold text-center pb-4 md:pr-8">Our Passion</h4>
 			<p class="text-justify pb-8 md:pr-16">
 				We are [SL x FRESHEASY] Meal Kits, your gateway to authentic and delightful Korean cuisine. 
-				We are a team of passionate food enthusiats dedicated to bringing the rich and bold flavours 
+				We are a team of passionate food enthusiasts dedicated to bringing the rich and bold flavours 
 				of Korea to your home. <br><br>
 				Our love for Korean dishes has driven us to create easy-to-cook mealkits that ensure a memorable
 				dining experience for you and your loved ones.
