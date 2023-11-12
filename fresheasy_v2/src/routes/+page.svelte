@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>[ShareLife x FreshEasy] Korean Meal Kits</title>
+</svelte:head>
+
 <script>
 	import Hero from '$lib/hero.svelte'
 	import NavbarResponsive from '$lib/navbar_responsive.svelte';
@@ -116,7 +120,7 @@
 				/>
 			</div>
 			<div class="flex justify-center pb-16">
-				<a href="checkout"><div class="w-48 rounded-lg bg-primary-500 hover:bg-primary-600 text-center h-12 pt-3 text-white font-bold">
+				<a href="checkout.html"><div class="w-48 rounded-lg bg-primary-500 hover:bg-primary-600 text-center h-12 pt-3 text-white font-bold">
 					CHECKOUT NOW
 				</div></a>
 			</div>

@@ -1,16 +1,16 @@
 <div class="bg-surface-700 hidden md:flex text-lg text-white w-full p-8">
     <div class=" w-4/5">
         <ul class="flex space-x-8 pb-8">
-            <li><a href="home" class="hover:underline">Home</a></li>
-            <li><a href="about" class="hover:underline">About Us</a></li>
-            <li><a href="mealkits" class="hover:underline">Order</a></li>
-            <li><a href="faq" class="hover:underline">FAQ</a></li>
-            <li><a href="contact" class="hover:underline">Contact Us</a></li>
+            <li><a href="home.html" class="hover:underline">Home</a></li>
+            <li><a href="about.html" class="hover:underline">About Us</a></li>
+            <li><a href="mealkits.html" class="hover:underline">Order</a></li>
+            <li><a href="faq.html" class="hover:underline">FAQ</a></li>
+            <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
         </ul>
         <ul class="flex space-x-4 pb-8">
-            <li><a href="privacy" class="hover:underline">Privacy Policy</a></li>
+            <li><a href="privacy.html" class="hover:underline">Privacy Policy</a></li>
             <li><p>|</p></li>
-            <li><a href="privacy" class="hover:underline">Terms & Conditions</a></li>
+            <li><a href="privacy.html" class="hover:underline">Terms & Conditions</a></li>
         </ul>
         <ul class="flex space-x-4">
             <li><i>SL x fresheasy &copy; 2023.</i></li>

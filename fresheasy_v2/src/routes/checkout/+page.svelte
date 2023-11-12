@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>[SLxFE] - Checkout</title>
+</svelte:head>
+
 <script>
 	import HeaderSpacer from "$lib/header_spacer.svelte";
 	import NavbarResponsive from "$lib/navbar_responsive.svelte";
@@ -105,8 +109,8 @@
 					<div class="px-8 pb-4">
 						<input class="w-full mt-3 appearance-none border border-gray-300 rounded-xl text-gray-700 leading-tight focus:outline-none" id="contact" name placeholder="Card number">
 						<div class="w-full flex pt-4 pb-2">
-							<input class="w-1/4 mr-2 appearance-none border border-gray-300 rounded-xl text-gray-700 leading-tight focus:outline-none" type="month" placeholder="Expiration (MM/YY)">
-							<input class="w-1/4 ml-2 appearance-none border border-gray-300 rounded-xl text-gray-700 leading-tight focus:outline-none" name placeholder="CVV">
+							<input class="w-1/2 mr-2 appearance-none border border-gray-300 rounded-xl text-gray-700 leading-tight focus:outline-none" type="month" placeholder="Expiration (MM/YY)">
+							<input class="w-1/2 ml-2 appearance-none border border-gray-300 rounded-xl text-gray-700 leading-tight focus:outline-none" name placeholder="CVV">
 						</div>
 						<input class="w-full mt-3 appearance-none border border-gray-300 rounded-xl text-gray-700 leading-tight focus:outline-none" id="contact" name placeholder="Name on card">
 						<div class="flex pt-4">

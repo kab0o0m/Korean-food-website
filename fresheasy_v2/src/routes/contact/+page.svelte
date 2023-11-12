@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>[SLxFE] - Contact Us</title>
+</svelte:head>
+
 <script>
 	import HeaderSpacer from "$lib/header_spacer.svelte";
 	import NavbarResponsive from "$lib/navbar_responsive.svelte";
@@ -74,7 +78,7 @@
 				</svg>
 				</td>
 				<td>
-				<a href="https://www.facebook.com/slfoods.sg/" class=" text-xl lg:text-2xl underline">https://www.facebook.com/slfoods.sg/</a>
+				<a href="https://www.facebook.com/slfoods.sg/.html" class=" text-xl lg:text-2xl underline">https://www.facebook.com/slfoods.sg/</a>
 				</td>
 			</tr>
 			<tr>
@@ -85,7 +89,7 @@
 					</svg>
 				</td>
 				<td>
-				<a href="https://www.instagram.com/sl_sharelife" class=" text-xl lg:text-2xl underline">https://www.instagram.com/sl_sharelife</a>
+				<a href="https://www.instagram.com/sl_sharelife.html" class=" text-xl lg:text-2xl underline">https://www.instagram.com/sl_sharelife</a>
 				</td>
 			</tr>
 			</table>

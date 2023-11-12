@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>[SLxFE] - Frequently Asked Questions</title>
+</svelte:head>
+
 <script>
 	import HeaderSpacer from "$lib/header_spacer.svelte";
 	import NavbarResponsive from "$lib/navbar_responsive.svelte";
@@ -67,7 +71,7 @@
 		<h3 class="h3 text-center pt-8 font-semibold mx-6">Still have unanswered questions?</h3>
 		<h3 class="h3 text-center pb-8 font-semibold mx-6">Please fill in our contact form and we will get back to you as soon as possible.</h3>
 		<div class="flex justify-center pb-8">
-			<a href="contact" class="w-48 bg-primary-500 hover:bg-primary-600 rounded-xl pb-1">
+			<a href="contact.html" class="w-48 bg-primary-500 hover:bg-primary-600 rounded-xl pb-1">
 				<p class="text-white py-2 text-center pb-2 font-bold">CONTACT US</p>
 			</a>
 		</div>

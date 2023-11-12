@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>[SLxFE] - Army Stew</title>
+</svelte:head>
+
 <script>
 	import HeaderSpacer from "$lib/header_spacer.svelte";
 	import NavbarResponsive from "$lib/navbar_responsive.svelte";
@@ -21,7 +25,7 @@
 	<div class="flex justify-center flex-col items-center bg-white ">
 		<div class="w-full flex lg:flex-row flex-col p-4">
 			<div class="w-full flex justify-center">
-				<img class="w-[360px] lg:w-[480px] h-[266px] lg:h-[355px] lg:ml-32 mt-8 lg:my-8" src="/assets/army_stew_img.png"  alt=""/>
+				<img class="w-[360px] lg:w-[480px] h-[266px] lg:h-[355px] lg:ml-32 mt-8 lg:my-8" src="./assets/army_stew_img.png"  alt=""/>
 			</div>
 			<div class="w-full px-12 py-8 lg:px-24 lg:py-16">
 				<h3 class="h3 font-semibold text-center lg:text-left">Army Stew</h3>
@@ -76,31 +80,31 @@
 				<ul class="space-y-6">
 					<li class="lg:mr-32">
 						<div class="flex pt-3">
-							<img class="w-24" alt="" src="/assets/army_stew/meat.png" />
+							<img class="w-24" alt="" src="./assets/army_stew/meat.png" />
 							<p class="text-justify px-4 pt-2">Our meal kit contains slices of <b>luncheon meat, chicken chipolata and spicy Italian pork sausage</b> for that chew.</p>
 						</div>
 					</li>
 					<li class="lg:mr-32">
 						<div class="flex">
-							<img class="w-24" alt="" src="/assets/army_stew/sauce.png" />
+							<img class="w-24" alt="" src="./assets/army_stew/sauce.png" />
 							<p class="text-justify px-4 pt-2">Our <b>stew sauce</b> recipe contains a mix of spices that is heart and bursting with flavour.</p>
 						</div>
 					</li>
 					<li class="lg:mr-32">
 						<div class="flex">
-							<img class="w-24" alt="" src="/assets/army_stew/vegetable.png" />
+							<img class="w-24" alt="" src="./assets/army_stew/vegetable.png" />
 							<p class="text-justify px-4 pt-2">We've selected the freshest <b>vegetables and herbs</b> for that authentic touch.</p>
 						</div>
 					</li>
 					<li class="lg:mr-32">
 						<div class="flex">
-							<img class="w-24" alt="" src="/assets/army_stew/ramen.png" />
+							<img class="w-24" alt="" src="./assets/army_stew/ramen.png" />
 							<p class="text-justify px-4 pt-2">The <b>ramen</b> will soak up all the delicious flavours in the stew to add an extra layer of satisfaction to your meal.</p>
 						</div>
 					</li>
 					<li class="lg:mr-32">
 						<div class="flex">
-							<img class="w-24" alt="" src="/assets/army_stew/cheese.png" />
+							<img class="w-24" alt="" src="./assets/army_stew/cheese.png" />
 							<p class="text-justify px-4 pt-2">Add this slice of <b>cheese</b> while the stew is still hot for extra gooey-ness.</p>
 						</div>
 					</li>
@@ -112,19 +116,16 @@
 			<ProductSelectorCondensed
 				image_src='./assets/beef_bulgogi_img.png'
 				product_name='Beef Bulgogi'
-				product_price='6.00'
 				product='beef'
 			/>
 			<ProductSelectorCondensed
 				image_src='./assets/spicy_chicken_bulgogi_img.png'
 				product_name='Spicy Chicken Bulgogi'
-				product_price='6.00'
 				product='chicken'
 			/>
 			<ProductSelectorCondensed
 				image_src='./assets/spicy_pork_bulgogi_img.png'
 				product_name='Spicy Pork Bulgogi'
-				product_price='6.00'
 				product='pork'
 			/>
 		</div>

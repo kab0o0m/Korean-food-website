@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>[SLxFE] - Privacy Policy</title>
+</svelte:head>
+
 <script>
 	import HeaderSpacer from "$lib/header_spacer.svelte";
 	import NavbarResponsive from "$lib/navbar_responsive.svelte";
