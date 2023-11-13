@@ -14,7 +14,7 @@
     <div class="flex justify-center py-4">
         <hr class="bg-primary-500 w-48 h-0.5">
     </div>
-    <h4 class="h4 sm:mx-24 mx-2 px-8">{@html page_subtitle}</h4>
+    <h4 class="h4 mx-16 lg:mx-64">{@html page_subtitle}</h4>
 </div>
 
 <style>
