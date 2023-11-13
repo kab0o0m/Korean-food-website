@@ -97,25 +97,25 @@
 				<ProductSelector
 					image_src='./assets/beef_bulgogi_img.png'
 					product_name='Beef Bulgogi'
-					product_price='6.00'
+					product_price='8.00'
 					product='beef'
 				/>
 				<ProductSelector
 					image_src='./assets/spicy_chicken_bulgogi_img.png'
 					product_name='Spicy Chicken Bulgogi'
-					product_price='6.00'
+					product_price='8.00'
 					product='chicken'
 				/>
 				<ProductSelector
 					image_src='./assets/spicy_pork_bulgogi_img.png'
 					product_name='Spicy Pork Bulgogi'
-					product_price='6.00'
+					product_price='8.00'
 					product='pork'
 				/>
 				<ProductSelector
 					image_src='./assets/army_stew_img.png'
 					product_name='Army Stew'
-					product_price='6.00'
+					product_price='8.00'
 					product='armystew'
 				/>
 			</div>
