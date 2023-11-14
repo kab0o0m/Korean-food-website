@@ -79,7 +79,7 @@
 				<label for="date" class="font-bold">
 					Delivery Date and Time
 				</label>
-				<input type="date" id="date" class="my-2 border-gray-300 rounded-xl text-gray-700 focus:outline-none" min="{tomorrowFormatted}" max="{nextMonthFormatted}" />
+				<input type="date" id="date" class="my-2 border-gray-300 rounded-xl text-gray-700 focus:outline-none" min="{tomorrowFormatted}" max="{nextMonthFormatted}" placeholder="Select Date"/>
 				<ul class="py-2 px-3">
 					<li><div class="flex pt-1">
 						<input type="radio" name="time" id="9-12" class="mt-1 mr-2" selected />
@@ -109,7 +109,7 @@
 					<div class="px-8 pb-4">
 						<input class="w-full mt-3 appearance-none border border-gray-300 rounded-xl text-gray-700 leading-tight focus:outline-none" id="contact" name placeholder="Card number">
 						<div class="w-full flex pt-4 pb-2">
-							<input class="w-1/2 mr-2 appearance-none border border-gray-300 rounded-xl text-gray-700 leading-tight focus:outline-none" type="month" placeholder="Expiration (MM/YY)">
+							<input class="w-1/2 mr-2 appearance-none border border-gray-300 rounded-xl text-gray-700 leading-tight focus:outline-none" type="month" placeholder="Expiration">
 							<input class="w-1/2 ml-2 appearance-none border border-gray-300 rounded-xl text-gray-700 leading-tight focus:outline-none" name placeholder="CVV">
 						</div>
 						<input class="w-full mt-3 appearance-none border border-gray-300 rounded-xl text-gray-700 leading-tight focus:outline-none" id="contact" name placeholder="Name on card">
@@ -138,6 +138,10 @@
 				</label>
 				<input class="w-1/4 mt-3 appearance-none border border-gray-300 rounded-xl text-gray-700 leading-tight focus:outline-none" id="promocode" name placeholder="">
 			</form>
+			<div class="flex pt-4">
+				<input type="checkbox" id="terms" name="billingaddr" value="same" class="mt-1 rounded-md mr-2">
+				<label for="terms" class="text-gray-700 pt-1 text-xs">I have read and agree to SL Fresheasy's <a class="underline" href="privacy.html">Privacy Policy</a></label><br>
+			</div>
 			<div class="bg-primary-500 rounded-xl mx-8 my-8 cursor-pointer hover:bg-primary-700">
 				<p class="text-white text-center py-2 px-8 font-bold text-xl">Checkout Now</p>
 			</div>

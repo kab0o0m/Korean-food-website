@@ -42,6 +42,10 @@
 				placeholder="Message"
 			/>
 
+			<div class="flex pt-2 pb-6">
+				<input type="checkbox" id="terms" name="billingaddr" value="same" class="mt-1 rounded-md mr-2">
+				<label for="terms" class="text-gray-700 pt-1 text-xs">I have read and agree to SL Fresheasy's <a class="underline" href="privacy.html">Privacy Policy</a></label><br>
+			</div>
 			<div class="flex justify-center pb-4">
 				<button class="btn bg-primary-500 w-32 rounded-xl p-2 text-center hover:bg-primary-700 cursor-pointer select-none">
 					Send Message
