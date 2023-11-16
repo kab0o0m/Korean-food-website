@@ -1,3 +1,7 @@
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Noto+Sans:wght@400;600;700&display=swap">
+</head>
+
 <script>
     export let question = "Type your question!";
     export let answer = "Type your answer!";
@@ -25,3 +29,9 @@
         {/if}
     </div>
 </div>
+
+<style>
+    p, h3 {
+        font-family: 'Noto Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+</style>

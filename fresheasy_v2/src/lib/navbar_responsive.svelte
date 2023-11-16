@@ -1,4 +1,7 @@
-<!-- Navbar.svelte -->
+<head>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Noto+Sans:wght@400;600;700&display=swap">
+</head>
+
 <script>
   import ProductCounter from "$lib/product_counter.svelte";
 
@@ -25,7 +28,7 @@
 
 <nav class="bg-white z-50  px-3 sm:px-3 md:px-3 lg:p-1 xl:p-1 2xl:p-1 fixed w-screen shadow-xl select-none">
   <div class="container mx-auto px-4 py-2 flex justify-between items-center">
-    <a class="cursor-pointer text-xl" href="home">
+    <a class="cursor-pointer text-xl" href="home.html">
       <img class="h-16 w-auto" src="assets/logo.jpg" alt=""/>
     </a>
     <ul class="hidden lg:flex space-x-10">
@@ -151,3 +154,13 @@
     </ul>
   </div>
   {/if}
+
+  <style>
+    li>a, li>div>a {
+      font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    a>li {
+      font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>

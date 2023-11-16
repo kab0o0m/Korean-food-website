@@ -1,5 +1,21 @@
 <svelte:head>
 	<title>[SLxFE] - Checkout</title>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-HN5K1CFH54"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-HN5K1CFH54');
+	</script>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-PG9P7JQQ');</script>
+	<!-- End Google Tag Manager -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Noto+Sans:wght@400;600;700&display=swap">
 </svelte:head>
 
 <script>
@@ -38,6 +54,11 @@
 </script>
 
 <main>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PG9P7JQQ"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
 	<NavbarResponsive />
 	<HeaderSpacer />
 	<div class="flex justify-center align-middle">
@@ -55,7 +76,7 @@
 		</div>
 		<div class="lg:w-2/5 lg:py-16 lg:pl-4 lg:pr-16 lg:px-0 px-4">
 			<form class="bg-white">
-				<label for="contact" class="font-bold">
+				<label for="contact" class="font-semibold">
 					Contact Information
 				</label>
 				<input class="w-full mt-3 appearance-none border border-gray-300 rounded-xl text-gray-700 leading-tight focus:outline-none" id="contact" name placeholder="Full name">
@@ -63,7 +84,7 @@
 					<input class="w-1/2 mr-2 appearance-none border border-gray-300 rounded-xl text-gray-700 leading-tight focus:outline-none" name placeholder="E-mail">
 					<input class="w-1/2 ml-2 appearance-none border border-gray-300 rounded-xl text-gray-700 leading-tight focus:outline-none" name placeholder="Phone">
 				</div>
-				<label for="contact" class="font-bold">
+				<label for="contact" class="font-semibold">
 					Delivery Address
 				</label>
 				<input class="w-full mt-3 appearance-none border border-gray-300 rounded-xl text-gray-700 leading-tight focus:outline-none" id="contact" name placeholder="Address Line 1">
@@ -76,7 +97,7 @@
 					<input type="checkbox" id="vehicle1" name="billingaddr" value="same" class="mt-1 rounded-md mr-2">
 					<label for="billingaddr" class="text-gray-700">Billing address same as shipping</label><br>
 				</div>
-				<label for="date" class="font-bold">
+				<label for="date" class="font-semibold">
 					Delivery Date and Time
 				</label>
 				<input type="date" id="date" class="my-2 border-gray-300 rounded-xl text-gray-700 focus:outline-none" min="{tomorrowFormatted}" max="{nextMonthFormatted}" placeholder="Select Date"/>
@@ -98,7 +119,7 @@
 						<label for="6-9">6pm-9pm</label>
 					</div></li>
 				</ul>
-				<label for="paymentmethod" class="font-bold mb-2">
+				<label for="paymentmethod" class="font-semibold mb-2">
 					Payment Method
 				</label>
 				<div class="select-none px-3 border {selected === 'creditcard' ? 'border-gray-700' : 'border-gray-300'} rounded-lg flex my-2 py-1">
@@ -133,7 +154,7 @@
 				{#if selected=='paylah'}
 					<p class="text-gray-500 text-center text-md px-8">After clicking 'Checkout Now', you will be redirected to an external site to proceed with your payment.</p>
 				{/if}
-				<label for="promocode" class="font-bold">
+				<label for="promocode" class="font-semibold">
 					Promo Code
 				</label>
 				<input class="w-1/4 mt-3 appearance-none border border-gray-300 rounded-xl text-gray-700 leading-tight focus:outline-none" id="promocode" name placeholder="">
@@ -143,9 +164,19 @@
 				<label for="terms" class="text-gray-700 pt-1 text-xs">I have read and agree to SL Fresheasy's <a class="underline" href="privacy.html">Privacy Policy</a></label><br>
 			</div>
 			<div class="bg-primary-500 rounded-xl mx-8 my-8 cursor-pointer hover:bg-primary-700">
-				<p class="text-white text-center py-2 px-8 font-bold text-xl">Checkout Now</p>
+				<p class="text-white text-center py-2 px-8 font-semibold text-xl">Checkout Now</p>
 			</div>
 		</div>
 	</div>
 	<Footer />
 </main>
+
+<style>
+	p, ol, ul, li, a, b, input {
+		font-family: 'Noto Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	}
+
+	h1, h2, h3, h4, h5, h6, label {
+		font-family: 'Poppins' ,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	}
+</style>

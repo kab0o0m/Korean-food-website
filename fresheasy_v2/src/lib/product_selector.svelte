@@ -1,3 +1,7 @@
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Noto+Sans:wght@400;600;700&display=swap">
+</head>
+
 <script>
     import ProductCounter from '$lib/product_counter.svelte';
     export let product_name;
@@ -25,3 +29,9 @@
         <ProductCounter />
     </div>
 </div>
+
+<style>
+    h4.h4, h5.h5 {
+        font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+</style>

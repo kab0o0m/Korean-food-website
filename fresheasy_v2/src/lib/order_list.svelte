@@ -1,3 +1,7 @@
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Noto+Sans:wght@400;600;700&display=swap">
+</head>
+
 <script>
     let bulgogi_amnt = 1;
     let armystew_amnt = 3;
@@ -126,3 +130,9 @@
     </div>
     
 </div>
+
+<style>
+    td {
+        font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+</style>

@@ -1,3 +1,7 @@
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Noto+Sans:wght@400;600;700&display=swap">
+</head>
+
 <script>
     export let icon;
     export let number;
@@ -34,5 +38,9 @@
     #num_cont {
         width: 4em;
         height: 4em;
+    }
+
+    h3, p {
+        font-family: 'Noto Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 </style>
