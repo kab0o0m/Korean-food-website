@@ -38,7 +38,7 @@
 	<div class="flex justify-center align-middle">
 		<PageTitle 
 			page_title="Frequently Asked Questions"
-			page_subtitle=""
+			page_subtitle="<br>&nbsp;"
 			icon_left=''
 			icon_right=''
 		/>

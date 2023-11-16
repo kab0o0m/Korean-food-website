@@ -42,7 +42,7 @@
 		/>
 	</div>
 	<h2 class="h2 bg-white text-center font-semibold py-16 w-full">Contact Us Directly</h2>
-	<div class="flex flex-col lg:flex-row justify-center items-center pb-16">
+	<div class="flex flex-col text-sm md:text-md lg:text-lg lg:flex-row justify-center items-center pb-16 px-4">
 		<div class="flex flex-col justify-center lg:w-1/2 w-full px-8 lg:block lg:pl-16 xl:pl-32">
 			<div class="flex justify-center lg:justify-normal">
 				<h4 class="h4 font-semibold pt-1">SUBMIT A TICKET</h4>

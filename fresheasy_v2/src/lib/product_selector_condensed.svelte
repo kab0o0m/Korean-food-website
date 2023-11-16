@@ -9,7 +9,7 @@
 </script>
 
 <div class="flex flex-col px-6 py-2 select-none">
-    <div class="pb-4 h-48 flex"><a href="{product}.html">
+    <div class="pb-4 w-64 flex justify-center align-center content-center"><a href="{product}.html">
         <img src="{image_src}" alt=""
              class="hover:scale-110 hover:rotate-3 duration-150 -z-50"
         />

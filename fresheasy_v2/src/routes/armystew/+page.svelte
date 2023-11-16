@@ -38,7 +38,7 @@
 	<div class="flex justify-center align-middle">
 		<PageTitle 
 			page_title="Meal Kits"
-			page_subtitle="Our recipes include the finest ingredients, ensuring a <span class='text-primary-600'>restaurant-quality</span> meal."
+			page_subtitle="Our recipes include the finest ingredients, ensuring a <span class='text-primary-600'>restaurant-quality</span> meal.<br>&nbsp;"
 			icon_left=''
 			icon_right=''
 		/>

@@ -36,14 +36,14 @@
 	<div class="flex justify-center align-middle">
 		<PageTitle 
 			page_title="Privacy Policy"
-			page_subtitle="This privacy policy describes how we collect, use and disclose Personal Information that<br>you provide during your online and offline interctions with us, or that we collect about you."
+			page_subtitle="This privacy policy describes how we collect, use and disclose Personal Information that you provide during your online and offline interctions with us, or that we collect about you.<br>&nbsp;"
 			icon_left='<svg xmlns="http://www.w3.org/2000/svg" class="h6" height="3em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224 16c-6.7 0-10.8-2.8-15.5-6.1C201.9 5.4 194 0 176 0c-30.5 0-52 43.7-66 89.4C62.7 98.1 32 112.2 32 128c0 14.3 25 27.1 64.6 35.9c-.4 4-.6 8-.6 12.1c0 17 3.3 33.2 9.3 48H45.4C38 224 32 230 32 237.4c0 1.7 .3 3.4 1 5l38.8 96.9C28.2 371.8 0 423.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7c0-58.5-28.2-110.4-71.7-143L415 242.4c.6-1.6 1-3.3 1-5c0-7.4-6-13.4-13.4-13.4H342.7c6-14.8 9.3-31 9.3-48c0-4.1-.2-8.1-.6-12.1C391 155.1 416 142.3 416 128c0-15.8-30.7-29.9-78-38.6C324 43.7 302.5 0 272 0c-18 0-25.9 5.4-32.5 9.9c-4.8 3.3-8.8 6.1-15.5 6.1zm56 208H267.6c-16.5 0-31.1-10.6-36.3-26.2c-2.3-7-12.2-7-14.5 0c-5.2 15.6-19.9 26.2-36.3 26.2H168c-22.1 0-40-17.9-40-40V169.6c28.2 4.1 61 6.4 96 6.4s67.8-2.3 96-6.4V184c0 22.1-17.9 40-40 40zm-88 96l16 32L176 480 128 288l64 32zm128-32L272 480 240 352l16-32 64-32z"/></svg>'
 			icon_right=''
 		/>
 	</div>
-	<div class="flex flex-col text-justify bg-white px-16 py-8">
+	<div class="flex flex-col text-left bg-white px-16 py-8">
 		<p>Last updated: 26 October 2023</p>
-		<p class="mt-6">This Privacy Policy (“Policy”) sets out the basis which SL Foods Private Limited (“we”, “us”, or “our”) may collect, use, disclose or otherwise process personal data of our customers in accordance with the Personal Data Protection Act (“PDPA”). This Policy applies to personal data in our possession or under our control, including personal data in the possession of organisations which we have engaged to collect, use, disclose or process personal data for our purposes.</p><br><br>
+		<p class="mt-6">This Privacy Policy (“Policy”) sets out the basis which SL Foods Private Limited (“we”, “us”, or “our”) may collect, use, disclose or otherwise process personal data of our customers in accordance with the Personal Data Protection Act (“PDPA”). This Policy applies to personal data in our possession or under our control, including personal data in the possession of organisations which we have engaged to collect, use, disclose or process personal data for our purposes.</p>
 		<h6 class="h6 mt-4 font-bold underline">PERSONAL DATA</h6><br>
 		&nbsp;&nbsp;&nbsp;1. As used in this Policy: <br>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. “customer” means an individual who:<br>
@@ -59,9 +59,7 @@
 <br>
 		<h6 class="h6 mt-4 font-bold underline">COLLECTION, USE AND DISCLOSURE OF PERSONAL DATA </h6><br>
 		&nbsp;&nbsp;&nbsp;4. We generally do not collect your personal data unless<br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. it is provided to us voluntarily by you directly or via a third party who has been duly authorised by you to disclose your personal data to us (your “authorised representative”) after<br>
-		&nbsp;&nbsp;&nbsp;you (or your authorised representative) has been notified of the purpose for which the data is collected, and<br>
-		&nbsp;&nbsp;&nbsp;you (or your authorised representative) have provided written consent to the collection and usage of your personal data fo those purposes, or<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. it is provided to us voluntarily by you directly or via a third party who has been duly authorised by you to disclose your personal data to us (your “authorised representative”) after you (or your authorised representative) has been notified of the purpose for which the data is collected, and you (or your authorised representative) have provided written consent to the collection and usage of your personal data fo those purposes, or<br>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. collection and use of personal data without consent is permitted or required by the PDPA or other laws. We shall seek your consent before collecting any additional personal data and before using your personal data for a purpose which has not been notified to you (except where permitted or authorised by law). <br>
 <br>
 		&nbsp;&nbsp;&nbsp;5. We may collect and use your personal data for any or all of the following purposes: <br>
@@ -90,7 +88,7 @@
 		<h6 class="h6 mt-4 font-bold underline">ACCESS TO AND CORRECTION OF PERSONAL DATA <br></h6>
 		&nbsp;&nbsp;&nbsp;12. If you wish to make (a) an access request for access to a copy of the personal data which we hold about you or information about the ways in which we use or disclose your personal data, or (b) a correction request to correct or update any of your personal data which we hold about you, you may submit your request in writing or via email to our Data Protection Officer at the contact details provided below.  <br>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. qwerty@slfoods.com<br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. +65 98765432<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. +65 6684 1261<br>
 		&nbsp;&nbsp;&nbsp;13. Please note that a reasonable fee may be charged for an access request. If so, we will inform you of the fee before processing your request.  <br>
 		&nbsp;&nbsp;&nbsp;14. We will respond to your request as soon as reasonably possible. Should we not be able to respond to your request within thirty (30) days after receiving your request, we will inform you in writing within thirty (30) days of the time by which we will be able to respond to your request. If we are unable to provide you with any personal data or to make a correction requested by you, we shall generally inform you of the reasons why we are unable to do so (except where we are not required to do so under the PDPA).<br>
 <br>
